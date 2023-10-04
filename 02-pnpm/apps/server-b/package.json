@@ -1,0 +1,18 @@
+{
+  "name": "@apps/server-b",
+  "scripts": {
+    "dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@apollo/federation": "0.38.1",
+    "@apollo/subgraph": "2.2.3",
+    "@nestjs/apollo": "10.2.0",
+    "@nestjs/cli": "10.1.18",
+    "@nestjs/common": "9.4.2",
+    "@nestjs/core": "9.4.2",
+    "@nestjs/graphql": "10.0.22",
+    "@nestjs/platform-fastify": "9.4.3",
+    "apollo-server-fastify": "3.12.1",
+    "graphql": "16.5.0"
+  }
+}
