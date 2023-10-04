@@ -28,6 +28,8 @@
 
 `graphql` 패키지를 여러 버전으로 동시에 설치해서 사용하면 안된다는 에러가 발생함. (비정상)
 
+---
+
 ### PNPM
 
 #### server-a
@@ -41,7 +43,8 @@
 > **Note**  
 > https://stackoverflow.com/questions/73807059/nestjs-graphql-fastify-fastifyerror-fastify-plugin-fastify-accepts-expected  
 > `@nestjs/common v9`, `@nestjs/platform-fastify v9`에서 `fastify v4`를 사용하는데, `apollo-server-fastify` 는 이를 지원하지 않아서 발생하는 에러.  
-> 패키지 개발자가 의도한 에러이며, 모듈 버전이 꼬여서 발생하는 문제는 아니다.
+> 패키지 개발자가 의도한 에러이며, 패키지 버전이 꼬여서 발생하는 문제는 아니다.  
+> nestjs 패키지들을 v10으로 업데이트하고, `apollo-server-fastify`를 `@as-integrations/fastify` 교체해주면 문제가 해결된다.
 
 #### server-c
 
@@ -50,3 +53,7 @@
 #### server-d
 
 문제 없음
+
+## 결론
+
+PNPM이 최고다.
