@@ -8,6 +8,8 @@
 - server-c: nestjs 10버전 + fastify + graphql
 - server-d: nestjs 10버전 + express + graphql
 
+> 각 Workspace 폴더에 테스트 결과 사진이 업로드 되어있으니 참고
+
 ## 테스트 결과
 
 ### NPM
